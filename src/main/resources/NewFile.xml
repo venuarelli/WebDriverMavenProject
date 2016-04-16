@@ -1,0 +1,42 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" parallel="tests">
+	<test name="AjaxDropBox-firefox">
+		<parameter name="browser" value="firefox">
+		</parameter>
+		<classes>
+			<class name="facebook.AjaxDropBox">
+				<methods >
+				<include name="testAjaxDropBox"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+ 
+	<test name="ActionsAPI-chrome">
+		<parameter name="browser" value="chrome">
+		</parameter>
+		<classes>
+			<class name="facebook.ActionsAPI">
+				<methods >
+				<include name="testActionsAPI"></include>
+				</methods>
+				
+			</class>
+		</classes>
+	</test>
+
+	<test name="FaceBookHomePage-ie">
+		<parameter name="browser" value="ie">
+		</parameter>
+		<classes>
+			<class name="facebook.FaceBookHomePage">
+				<methods >
+				<include name="testFaceBookHomePage"></include>
+				</methods> 
+				
+			</class>
+		</classes>
+	</test>
+ </suite>
+ 

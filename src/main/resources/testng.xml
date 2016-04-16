@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+  <test name="ActionsAPI_firefox" >
+  <parameter name="browser" value="firefox"></parameter>
+    <classes>
+       <class name="facebook.ActionsAPI" >
+       <methods>
+       	<include name="testActionsAPI"></include>
+       </methods>
+       </class>
+    </classes>
+  </test>
+  
+   <test name="ActionsAPI_chrome" >
+    <parameter name="browser" value="chrome"></parameter>
+    <classes>
+       <class name="facebook.ActionsAPI" >
+       <methods>
+       	<include name="testActionsAPI"></include>
+       </methods>
+       </class>
+    </classes>
+  </test>
+ 
+</suite>
